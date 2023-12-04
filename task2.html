@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PortFolio</title>
+    <link rel="stylesheet" href="/level1/task2.css">
+    <script src="https://kit.fontawesome.com/60237d0bf7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="Hero_section ">
+        <nav>
+            <img src="https://see.fontimg.com/api/renderfont4/lg2Bw/eyJyIjoiZnMiLCJoIjo1NywidyI6MTAwMCwiZnMiOjU3LCJmZ2MiOiIjRkNGMEYwIiwiYmdjIjoiIzAwMDAwMCIsInQiOjF9/U25laGEgRGF3YW5p/feelfree-personal-use-regular.png" alt="Cursive fonts"></a>
+            <ul>
+                <li><a href="#header"> Home </a></li>
+                <li><a href="#about"> About </a> </li>
+                <li><a href="#Skills"> Skills </a> </li>
+                <li><a href="#project"> Project </a> </li>
+                <li><a href="#contact "> Contact </a> </li>
+            </ul>
+        </nav>
+        <br>
+        <!--<div id="header" style="float: right"></div>-->
+        <div class="header-text">
+            <p> Web Developer intern </p>
+            <h1> Hi, I'm Sneha Dawani </h1>
+        </div>
+    </section>
+
+    <!-- --------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Snehadawani.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> A computer Science student who is independent and self confident and is
+                        enthusiastic to gain new knowledge , skills . I consider myself a responsible and
+                        orderly person . I am looking forward for new work experience .</p><br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick=" opentab('Experience')"> Experience </p>
+                        <p class="tab-links" onclick=" opentab('Education')"> Education </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Experience">
+                        <ul>
+                            <li> <span> Vertisystem global pvt. ltd</span> <br> Software Trainee Intern <br> (Oct 2022-
+                                Dec2022) </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li> <span> Shri Vaishnav Institute Of Managment (2021-current) </span> <br> Bachelor's Of
+                                Computer Application </li>
+                            <li> <span> Chameli Devi Public School </span><br> class 12- Commerce + Maths [81% ]<br>
+                                Class 10 [86%]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------Skills------------>
+
+        <h1 class="sub-title"> My Skills </h1>
+        <div id="Skills">
+        <ul>
+            <li><h3> HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+             </li>   
+        </ul>
+
+        <ul>
+            <li><h3> CSS </h3>
+                <span class="bar"><span class="css"></span></span>
+             </li>   
+        </ul>
+
+        <ul>
+            <li><h3> Javascript </h3>
+                <span class="bar"><span class="javascript"></span></span>
+             </li>   
+        </ul>
+
+        <ul>
+            <li><h3> Python</h3>
+                <span class="bar"><span class="python"></span></span>
+             </li>   
+        </ul>
+  
+        <ul>
+            <li><h3> C++</h3>
+                <span class="bar"><span class="c"></span></span>
+             </li>   
+        </ul>
+
+        <ul>
+            <li><h3> Java</h3>
+                <span class="bar"><span class="java"></span></span>
+             </li>   
+        </ul>
+    </div>
+
+<!----------------- Project-------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title"> My Projects </h1>
+        <div class="row">
+            <div class="work-left">
+                <p> Amazon Web-Page Clone</p>
+                <video width="500px" height="500px" controls="controls">
+                <source src="/amazon clone .mp4" type="video/mp4">
+               </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <a href="#" class="btn"> See More</a>
+    <!-------------- CONTACT---------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> snehadawani2102@gmail.com </p>
+                    <p><i class="fa-solid fa-phone"></i> 7869831604</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sneha_dawani21?igshid=NGVhN2U2NjQ0Yg=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sneha-dawani-817a24230"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="/snehadawaniRESUME.jpeg" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message " rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Sneha. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
